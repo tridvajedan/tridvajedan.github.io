@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="onLoad()">
+    <div id='container'>
+        <div id="outline-box">
+        <div id='search-box'>
+            <input type="text" placeholder="London" id="search" />
+            <button id="submit" onclick="findCity()"><img src="images\search.png" id="image"/></button>
+        </div>
+        <div id="result-box">
+            <img src="" id="cond-image"></img>
+            <h2 id="city-name">London</h2>
+            <h2 id="city-temp">35°</h2>
+            <div id="details">
+            <div id="details-wind">
+            <h3>Wind</h3>
+            <div id="inline">
+            <h3 id="wind-value">35</h3>
+            <image src="images\wind.png" id="wind"/>
+        </div>-+
+            </div>
+            <div id="details-hum">
+                <h3>Humidity</h3>
+                <div id="inline">
+                <h3 id="hum-value">35</h3>
+                <image src="images\humidity.png" id="hum"/>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
