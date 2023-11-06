@@ -1,5 +1,3 @@
-//http://api.weatherapi.com/v1/current.json?key=f2e75fe3db94403e8b5164109232810&q=
-
 function onLoad()
 {
     var input = document.getElementById("search");
@@ -14,7 +12,7 @@ function onLoad()
 
 async function findCity()
 {
-    const response = await fetch("http://api.weatherapi.com/v1/current.json?key=f2e75fe3db94403e8b5164109232810&q="+document.getElementById("search").value);
+    const response = await fetch("https://corsproxy.io/?http://api.weatherapi.com/v1/current.json?key=f2e75fe3db94403e8b5164109232810&q="+document.getElementById("search").value);
     const jsonObject = await response.json();
     document.getElementById("city-name").innerHTML = jsonObject.location.name;
     document.getElementById("city-temp").innerHTML = jsonObject.current.temp_c + "°";
